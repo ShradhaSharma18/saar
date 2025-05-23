@@ -1,0 +1,46 @@
+.copyContainer {
+  @apply fixed bottom-10 left-10 text-gray-100 bg-gray-950 border border-gray-300 rounded-lg p-4 text-gray-800;
+
+  .copyHeading {
+    @apply text-lg font-semibold mb-2 text-gray-200;
+  }
+
+  .copyDescription {
+    @apply flex items-center text-sm text-gray-200 gap-3;
+  }
+/* index.module.css */
+
+.copyMessage {
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  color: white; /* White text color */
+  padding: 5px 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded corners */
+  position: absolute; /* Position absolute to hover over the copy element */
+  bottom: calc(100% + 5px); /* Position below the copy element */
+  right: 0; /* Position at the left of the copy element */
+  z-index: 999; /* Ensure the message is on top of other content */
+}
+
+/* Other styles for your component */
+
+  hr {
+    @apply my-1 border-gray-300;
+  }
+}
+
+/* .copyContainer {
+  @apply flex flex-col absolute text-white border border-white rounded p-2;
+  left: 30px;
+  bottom: 100px;
+
+  hr {
+    @apply my-1;
+  }
+  .copyHeading {
+    @apply text-base;
+  }
+
+  .copyDescription {
+    @apply flex items-center text-sm;
+  }
+} */
